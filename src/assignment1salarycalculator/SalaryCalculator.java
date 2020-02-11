@@ -16,9 +16,12 @@ public class SalaryCalculator {
         System.out.println("Hourly Wage is " + hourWage);
         return hourWage;
     }
-    
-    
+    public int calcSalary(int hourlyRate){
+        int salary = hourlyRate * (52*40);
+        System.out.println("Salary is " + salary);
+        return salary;
+    }   
 }
 
-    
+   
 
