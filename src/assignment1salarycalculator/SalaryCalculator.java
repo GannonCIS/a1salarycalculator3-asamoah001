@@ -21,6 +21,11 @@ public class SalaryCalculator {
         System.out.println("Salary is " + salary);
         return salary;
     }   
+     public double calcTaxes(double salary, double perc){
+        double taxes = salary * (perc/100);
+        System.out.println("Taxes Are " + taxes);
+        return taxes;
+     }
 }
 
    
