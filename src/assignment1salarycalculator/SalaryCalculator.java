@@ -25,7 +25,12 @@ public class SalaryCalculator {
         double taxes = salary * (perc/100);
         System.out.println("Taxes Are " + taxes);
         return taxes;
-     }
+    }
+     public double afterTax(double salary, double perc){
+        double takeHome = salary - ((perc/100)*salary);
+        System.out.println("Cash Out Is " + takeHome);
+        return takeHome;
+    }
 }
 
    
