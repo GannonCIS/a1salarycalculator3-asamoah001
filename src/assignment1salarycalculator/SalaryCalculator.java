@@ -13,24 +13,28 @@ public class SalaryCalculator {
     
     public int calcHourlyWage(int salary){
         int hourWage = salary/(52*40);
-        System.out.println("Hourly Wage is " + hourWage);
+        System.out.println("Hourly Wage is $" + hourWage);
         return hourWage;
     }
     public int calcSalary(int hourlyRate){
         int salary = hourlyRate * (52*40);
-        System.out.println("Salary is " + salary);
+        System.out.println("Salary is $" + salary);
         return salary;
     }   
      public double calcTaxes(double salary, double perc){
         double taxes = salary * (perc/100);
-        System.out.println("Taxes Are " + taxes);
+        System.out.println("Taxes Are $" + taxes);
         return taxes;
     }
-     public double afterTax(double salary, double perc){
+     public static double afterTax(double salary, double perc){
         double takeHome = salary - ((perc/100)*salary);
-        System.out.println("Cash Out Is " + takeHome);
+        System.out.println("Cash Out Is  $" + takeHome);
         return takeHome;
+      
     }
+    
+    
+    
 }
 
    
