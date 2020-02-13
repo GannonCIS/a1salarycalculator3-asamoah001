@@ -26,7 +26,7 @@ public class SalaryCalculator {
         System.out.println("Taxes Are $" + taxes);
         return taxes;
     }
-     public static double afterTax(double salary, double perc){
+     public double afterTax(double salary, double perc){
         double takeHome = salary - ((perc/100)*salary);
         System.out.println("Cash Out Is  $" + takeHome);
         return takeHome;
